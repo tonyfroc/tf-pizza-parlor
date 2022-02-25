@@ -1,3 +1,5 @@
+// Business Logic 
+
 function Pizza(size, type, meatTopping, vegTopping, price) {
   this.size = size;
   this.type = type; 
@@ -7,33 +9,32 @@ function Pizza(size, type, meatTopping, vegTopping, price) {
 }
 
 Pizza.prototype.calcPrice = function () { 
+  
   if (this.size === 'small') {
-    this.price += 10;
+        this.price += 10;
   } else if 
-    (this.size === 'medium') {
-      this.price += 15;
-    } else if 
-    (this.size === 'large')
-    this.price += 20;
+     (this.size === 'medium') {
+        this.price += 15;
+  } else if 
+     (this.size === 'large')
+        this.price += 20;
 
   if (this.type === 'deep dish') {
-    this.price += 3;
+        this.price += 3;
   } else if 
-    (this.type === 'thin crust') {
-      this.price += 2;
-    } else if 
-    (this.type === 'classic') 
-      this.price += 0;
+     (this.type === 'thin crust') {
+        this.price += 2;
+  } else if 
+     (this.type === 'classic') 
+        this.price += 0;
 
   if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs') {
-    this.price += 2.50
+        this.price += 2.50
   }
   if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions') {
-    this.price += 1.50
-    return this.price
+        this.price += 1.50
+        return this.price
   }
 }
 
-  const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
-
-  console.log(myPizza.calcPrice());
+// UI Logic 
