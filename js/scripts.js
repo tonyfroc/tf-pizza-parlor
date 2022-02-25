@@ -33,10 +33,21 @@ Pizza.prototype.calcPrice = function () {
   }
   if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions' || this.vegTopping === 'baby spinach') {
         this.price += 1.50
-        return this.price
   }
 }
 
 // UI Logic 
+
+  $(document).ready(function(){
+    $("button").click(function(event){
+      let size = $('#pizza-size').find(":selected").val();
+      let type = $('#pizza-type').find(":selected").val();
+      var meatTop = $("input[name='optradio']:checked").val();
+      var vegTop = $("input[name='optradio1']:checked").val();
+      event.preventDefault();
+    });
+  });
+
+
 
 
