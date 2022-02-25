@@ -32,10 +32,12 @@ Expected Output = Pizza {size: "small", type: "deep dish", meatTopping: "bacon",
 ### Describe: calcPrice()
 
 Test 1: "The calcPrice() function should return 15 for a medium sized pizza" 
-Code: const myPizza = new Pizza('medium', 'type', 'bacon', 'mushrooms');
+Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 Expected Output = 15; 
 
-
+Test 2: "The calcPrice() function should return 18 for a medium sized, deep dish pizza" 
+Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
+Expected Output = 18; 
 
 ## Setup/Installation Requirements
 - Download git
