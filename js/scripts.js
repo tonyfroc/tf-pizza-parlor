@@ -2,6 +2,7 @@ function Pizza(size, type, meatTopping, vegTopping, price) {
   this.size = size;
   this.type = type; 
   this.meatTopping = meatTopping;
+  this.vegTopping = vegTopping;
   this.price = 0;
 }
 
@@ -26,9 +27,12 @@ Pizza.prototype.calcPrice = function () {
 
   if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs') {
     this.price += 2.50
+  }
+  if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions') {
+    this.price += 1.50
     return this.price
   }
-    } 
+}
 
   const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 

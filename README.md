@@ -43,6 +43,10 @@ Test 3: "The calcPrice() function should return 20.5 for a medium sized, deep di
 Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 Expected Output = 20.5;
 
+Test 4: "The calcPrice() function should return 22 for a medium sized, deep dish pizza with bacon and mushrooms" 
+Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
+Expected Output = 22;
+
 ## Setup/Installation Requirements
 - Download git
 - Navigate to your Desktop folder
