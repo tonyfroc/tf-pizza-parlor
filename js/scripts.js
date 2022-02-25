@@ -33,8 +33,10 @@ Pizza.prototype.calcPrice = function () {
   }
   if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions' || this.vegTopping === 'baby spinach') {
         this.price += 1.50
+        return this.price
   }
 }
+
 
 // UI Logic 
 
@@ -42,8 +44,10 @@ Pizza.prototype.calcPrice = function () {
     $("button").click(function(event){
       let size = $('#pizza-size').find(":selected").val();
       let type = $('#pizza-type').find(":selected").val();
-      var meatTop = $("input[name='optradio']:checked").val();
-      var vegTop = $("input[name='optradio1']:checked").val();
+      let meatTop = $("input[name='optradio meat']:checked").val();
+      let vegTop = $("input[name='optradio1 veg']:checked").val();
+      let newPizza = new Pizza(size, type, meatTop, vegTop);
+      let price = newPizza.calcPrice();
       event.preventDefault();
     });
   });
