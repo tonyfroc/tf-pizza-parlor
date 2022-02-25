@@ -13,14 +13,15 @@
 
 ## Description
 
-
 ## Tests
 
 ### Describe: Pizza()
 
+Test 1: "The pizza function should return a Pizza object with two properties for size and toppings"
+Code: const myPizza = new Pizza("small", "bacon")
+Expected Output = Pizza {size: "small", toppings: "bacon"}
 
 ## Setup/Installation Requirements
-
 - Download git
 - Navigate to your Desktop folder
 - Make a folder to store the application files
