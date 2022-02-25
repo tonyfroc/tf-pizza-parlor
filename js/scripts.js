@@ -26,12 +26,12 @@ Pizza.prototype.calcPrice = function () {
         this.price += 2;
   } else if 
      (this.type === 'classic') 
-        this.price += 0;
+        this.price += 1;
 
-  if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs' || this.meatTopping === `pepperoni`) {
+  if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs' || this.meatTopping === `pepperoni` || this.meatTopping === `prosciutto`) {
         this.price += 2.50
   }
-  if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions' || this.vegTopping === 'baby spinach') {
+  if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions' || this.vegTopping === 'baby spinach' || this.vegTopping === 'artichoke') {
         this.price += 1.50
         return this.price
   }
@@ -47,7 +47,10 @@ Pizza.prototype.calcPrice = function () {
       let meatTop = $("input[name='optradio meat']:checked").val();
       let vegTop = $("input[name='optradio1 veg']:checked").val();
       let newPizza = new Pizza(size, type, meatTop, vegTop);
-      let price = newPizza.calcPrice();
+      let price = `$${newPizza.calcPrice()}`;
+      $('.pizza-overview').text(`You ordered a ${size}, ${type} pizza with ${meatTop} and ${vegTop}.`)
+      $('.pizza-price').text(`The total for your pizza is: ${price}`)
+      $("form")[0].reset();
       event.preventDefault();
     });
   });
