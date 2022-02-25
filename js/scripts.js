@@ -28,13 +28,15 @@ Pizza.prototype.calcPrice = function () {
      (this.type === 'classic') 
         this.price += 0;
 
-  if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs') {
+  if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs' || this.meatTopping === `pepperoni`) {
         this.price += 2.50
   }
-  if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions') {
+  if (this.vegTopping === 'mushrooms' || this.vegTopping === 'peppers' || this.vegTopping === 'onions' || this.vegTopping === 'baby spinach') {
         this.price += 1.50
         return this.price
   }
 }
 
 // UI Logic 
+
+
