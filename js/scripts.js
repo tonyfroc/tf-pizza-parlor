@@ -5,7 +5,6 @@ function Pizza(size, type, meatTopping, vegTopping, price) {
   this.price = 0;
 }
 
-
 Pizza.prototype.calcPrice = function () { 
   if (this.size === 'small') {
     this.price += 10;
@@ -24,10 +23,12 @@ Pizza.prototype.calcPrice = function () {
     } else if 
     (this.type === 'classic') 
       this.price += 0;
-      return this.price
+
+  if (this.meatTopping === 'bacon' || this.meatTopping === 'sausage' || this.meatTopping === 'meatballs') {
+    this.price += 2.50
+    return this.price
+  }
     } 
-
-
 
   const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 
