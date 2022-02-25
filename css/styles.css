@@ -38,14 +38,18 @@ h6 {
   font-style: italic;
 }
 
-.create-pizza {
-  padding: 50px; 
-  text-align: center;
+option {
+  background-color: white;
 }
 
 .container {
   border: 5px solid black; 
   padding: 75px; 
+}
+
+.create-pizza {
+  padding: 50px; 
+  text-align: center;
 }
 
 .form-control {
@@ -54,6 +58,14 @@ h6 {
   background-color: white;;
 }
 
-#customize-meat-toppings {
-  padding: 5px;
+.pizza-overview {
+  text-align: center; 
+  font-size: 25px;
 }
+
+.pizza-price {
+  text-align: center; 
+  font-size: 25px;
+}
+
+

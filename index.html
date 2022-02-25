@@ -19,7 +19,7 @@
       <h6>Welcome to Tony's Pizzeria: Authentic New York pizza, family owned for 80 years! </h6>
 
         <h5>Please select a pizza size and type: </h5>
-        <form id="customize-size-type">
+        <form id="pizza-size-type">
           <div class="form-group">
             <label for="pizzaSize">Please Select a Pizza Size:</label>
             <select class="form-control" id="pizza-size">
@@ -31,14 +31,14 @@
           <div class="form-group">
             <label for="pizzaType">Please Select a Pizza Type:</label>
             <select class="form-control" id="pizza-type">
-              <option value="deep dish">Deep Dish (+ 3$)</option>
-              <option value="thin crust">Thin Crust (+ 2$)</option>
-              <option value="classic">Classic (+ 0$)</option>
+              <option value="deep dish">Deep Dish (+ $3)</option>
+              <option value="thin crust">Thin Crust (+ $2)</option>
+              <option value="classic">Classic (+ $1)</option>
             </select>               
           </div>
           </form> 
 
-          <h5>Please Select Your Meat Toppings: $2.50 per topping</h5>
+          <h5>Please Select One Meat Topping: $2.50</h5>
           <form id="meat-tops">
           <label class="radio-inline">
             <input type="radio" value="bacon" name="optradio meat" checked> Bacon
@@ -52,10 +52,13 @@
           <label class="radio-inline">
             <input type="radio" value="pepperoni" name="optradio meat"> Pepperoni
           </label>
+          <label class="radio-inline">
+            <input type="radio" value="prosciutto" name="optradio meat"> Prosciutto
+          </label>
           </form>
 
           
-          <h5>Please Select Your Vegetable Toppings: 1.50$ per topping</h5>
+          <h5>Please Select One Vegetable Topping: $1.50</h5>
           <form id="veg-tops">
             <label class="radio-inline">
               <input type="radio" value="mushrooms" name="optradio1 veg" checked> Mushrooms
@@ -69,9 +72,18 @@
             <label class="radio-inline">
               <input type="radio" value="baby spinach" name="optradio1 veg"> Baby Spinach
             </label>
+            <label class="radio-inline">
+              <input type="radio" value="artichoke" name="optradio1 veg"> Artichoke
+            </label>
           </form>
           <div class="create-pizza">
-            <button type="submit" class="btn btn-secondary">Create My Pizza!</button>
+            <button type="submit" class="btn btn-secondary">Place my order!</button>
+          </div>
+          <div class="pizza-overview">
+            <p></p>
+          </div>
+          <div class="pizza-price">
+            <p></p>
           </div>
 </body>
 </html>
