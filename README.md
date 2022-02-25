@@ -29,6 +29,13 @@ Test 3: "The Pizza() function should return a Pizza Object with four properties 
 Code: const myPizza = new Pizza("small", "deep dish", "bacon", "mushrooms" )
 Expected Output = Pizza {size: "small", type: "deep dish", meatTopping: "bacon", vegTopping: "mushrooms"}
 
+### Describe: calcPrice()
+
+Test 1: "The calcPrice() function should return 15 for a medium sized pizza" 
+Code: const myPizza = new Pizza('medium', 'type', 'bacon', 'mushrooms');
+Expected Output = 15; 
+
+
 
 ## Setup/Installation Requirements
 - Download git
