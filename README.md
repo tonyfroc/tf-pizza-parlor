@@ -32,22 +32,23 @@ Expected Output = Pizza {size: "small", type: "deep dish", meatTopping: "bacon",
 ### Describe: calcPrice()
 
 Test 1: "The calcPrice() function should return 15 for a medium sized pizza" 
-Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
+Code: const myPizza.calcPrice() = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 Expected Output = 15; 
 
 Test 2: "The calcPrice() function should return 18 for a medium sized, deep dish pizza" 
-Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
+Code: myPizza.calcPrice() = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 Expected Output = 18; 
 
 Test 3: "The calcPrice() function should return 20.5 for a medium sized, deep dish pizza with bacon" 
-Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
+Code: myPizza.calcPrice() = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 Expected Output = 20.5;
 
 Test 4: "The calcPrice() function should return 22 for a medium sized, deep dish pizza with bacon and mushrooms" 
-Code: const myPizza = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
+Code: const myPizza.calcPrice() = new Pizza('medium', 'deep dish', 'bacon', 'mushrooms');
 Expected Output = 22;
 
 ## Setup/Installation Requirements
+
 - Download git
 - Navigate to your Desktop folder
 - Make a folder to store the application files
