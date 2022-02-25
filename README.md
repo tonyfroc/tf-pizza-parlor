@@ -25,6 +25,10 @@ Test 2: "The Pizza() function should return a Pizza Object with three properties
 Code: const myPizza = new Pizza("small", "bacon", "mushrooms" )
 Expected Output = Pizza {size: "small", meatTopping: "bacon", vegTopping: "mushrooms"}
 
+Test 3: "The Pizza() function should return a Pizza Object with four properties for size, type, meatTopping and vegTopping"
+Code: const myPizza = new Pizza("small", "deep dish", "bacon", "mushrooms" )
+Expected Output = Pizza {size: "small", type: "deep dish", meatTopping: "bacon", vegTopping: "mushrooms"}
+
 
 ## Setup/Installation Requirements
 - Download git
