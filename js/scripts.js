@@ -49,7 +49,7 @@ Pizza.prototype.calcPrice = function () {
       let newPizza = new Pizza(size, type, meatTop, vegTop);
       let price = `$${newPizza.calcPrice()}`;
       $('.pizza-overview').text(`You ordered a ${size}, ${type} pizza with ${meatTop} and ${vegTop}.`)
-      $('.pizza-price').text(`The total for your pizza is: ${price}`)
+      $('.pizza-price').text(`Pizza Total: ${price}`)
       $("form")[0].reset();
       event.preventDefault();
     });

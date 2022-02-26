@@ -13,6 +13,10 @@
 
 ## Description
 
+Tony's Pizza Parlor first prompts users to select a size and type of pizza. After selecting a size and type of pizza, users are prompted to select one meat topping and one vegetable topping. After placing the order, an overview of the pizza created is displayed, along with the total price of the pizza. Selections for size and type will be reset upon pressing "Place my order!".
+
+A pizza object constructor was used to create the pizza, and a calcPrice function prototype was made on that constructor to calculate the price of the pie. 
+
 ## Tests
 
 ### Describe: Pizza()
